@@ -631,17 +631,6 @@ def generate_bill(id):
 
     guest = cur.fetchone()
 
-    # result = cur.execute("SELECT cost FROM charges c WHERE (c.type = (SELECT r_type FROM rooms r, bookings b2 WHERE r.r_id = b2.r_id AND b2.g_id = %s) AND code = 0) OR (c.type = (SELECT a_type FROM amenities a, bookings b2 WHERE a.a_id = b2.a_id AND b2.g_id = %s) AND code = 1)", (id, id))
-
-    # costs = cur.fetchall()
-
-    # print(costs)
-    # print(len(bookings))
-
-    # result = cur.execute("SELECT sum(cost) as total FROM charges c WHERE (c.type = (SELECT r_type FROM rooms r, bookings b2 WHERE r.r_id = b2.r_id AND b2.g_id = %s) AND code = 0) OR (c.type = (SELECT a_type FROM amenities a, bookings b2 WHERE a.a_id = b2.a_id AND b2.g_id = %s) AND code = 1)", (id, id))
-
-    # total = cur.fetchone()
-
     total = 0
 
     for i in range(0, len(bookings)):
