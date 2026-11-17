@@ -683,11 +683,6 @@ def billings():
 
 
 if __name__ == "__main__":
-    # SECRET_KEY = os.urandom(32)
-    # app.config['SECRET_KEY'] = SECRET_KEY
-
-    # app.config["SESSION_TYPE"] = "filesystem"
-    # Session(app)
 
     SECRET_KEY = os.urandom(32)
     app.config["WTF_CSRF_SECRET_KEY"] = SECRET_KEY
