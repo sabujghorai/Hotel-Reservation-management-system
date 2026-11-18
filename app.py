@@ -624,7 +624,6 @@ def generate_bill(id):
     cur = mysql.connection.cursor()
     result = cur.execute("SELECT * FROM bookings WHERE  g_id = %s", [id])
     bookings = cur.fetchall()
-
     result = cur.execute("SELECT * FROM guests WHERE g_id = %s", [id])
 
     guest = cur.fetchone()
