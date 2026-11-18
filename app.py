@@ -210,7 +210,6 @@ def login():
             error = "Username not found"
             app.logger.info("NO SUCH USER")
             return render_template("login.html", error=error)
-
     return render_template("login.html")
 
 
