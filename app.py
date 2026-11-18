@@ -188,12 +188,9 @@ def login():
             if sha256_crypt.verify(request.form["password"], password):
                 print("matched and redirecting....")
                 # Passed
-                # app.logger.info('PASSWORD MATCHED')
                 session["logged_in"] = True
                 session["username"] = username
-                # session['secret_key'] = SECRET_KEY
                 flash("Successfully logged in!", "success")
-
                 return redirect(url_for("dashboard"))
 
             else:
