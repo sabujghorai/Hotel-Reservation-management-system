@@ -254,7 +254,6 @@ def admin_amenities():
     else:
         msg = "No Facilities available"
         return render_template("dashboard.html", msg=msg)
-
     cur.close()
     return render_template("admin_amenities.html")
 
