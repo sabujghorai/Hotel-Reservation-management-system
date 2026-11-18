@@ -248,7 +248,6 @@ def admin_amenities():
     result = cur.execute("SELECT * FROM amenities")
 
     amenities = cur.fetchall()
-
     if result > 0:
         return render_template("admin_amenities.html", amenities=amenities)
     else:
