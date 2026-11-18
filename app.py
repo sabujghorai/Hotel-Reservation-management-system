@@ -284,7 +284,6 @@ def add_amenity():
         description = form.description.data
 
         cur = mysql.connection.cursor()
-
         cur.execute(
             "INSERT INTO amenities(a_id, a_type, a_status, a_capacity, a_title, a_description) VALUES(%s, %s, %s, %s, %s, %s)",
             (idd, type, status, capacity, title, description),
