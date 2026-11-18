@@ -358,7 +358,6 @@ def delete_amenity(id):
     cur.close()
 
     flash("Facility Deleted", "success")
-
     return redirect(url_for("admin_amenities"))
 
 
