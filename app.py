@@ -341,7 +341,6 @@ def edit_amenity(id):
         flash("Facility Updated successfully", "success")
 
         return redirect(url_for("dashboard"))
-
     print(form.errors)
     return render_template("edit_amenity.html", form=form)
 
