@@ -326,7 +326,6 @@ def edit_amenity(id):
         capacity = request.form["capacity"]
         title = request.form["title"]
         description = request.form["description"]
-
         cur = mysql.connection.cursor()
         cur.execute(
             "UPDATE amenities SET a_type=%s, a_status=%s, a_capacity=%s, a_title=%s, a_description=%s WHERE a_id=%s",
