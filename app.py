@@ -658,7 +658,6 @@ def generate_bill(id):
 @app.route("/billings", methods=["GET", "POST"])
 def billings():
     form = BillForm()
-
     if request.method == "POST":
         id = form.id.data
         print(id)
