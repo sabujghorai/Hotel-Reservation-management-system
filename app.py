@@ -356,7 +356,6 @@ def delete_amenity(id):
     mysql.connection.commit()
 
     cur.close()
-
     flash("Facility Deleted", "success")
     return redirect(url_for("admin_amenities"))
 
