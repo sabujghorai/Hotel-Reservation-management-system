@@ -291,7 +291,6 @@ def add_amenity():
         )
 
         mysql.connection.commit()
-
         cur.close()
         flash("Facility Added Successfully", "success")
         return redirect(url_for("add_amenity"))
