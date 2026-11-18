@@ -337,7 +337,6 @@ def edit_amenity(id):
         mysql.connection.commit()
 
         cur.close()
-
         flash("Facility Updated successfully", "success")
         return redirect(url_for("dashboard"))
     print(form.errors)
