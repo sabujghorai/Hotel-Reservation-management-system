@@ -370,7 +370,6 @@ def admin_rooms():
     result = cur.execute("SELECT * FROM rooms")
 
     rooms = cur.fetchall()
-
     if result > 0:
         return render_template("admin_rooms.html", rooms=rooms)
     else:
