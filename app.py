@@ -294,7 +294,6 @@ def add_amenity():
 
         cur.close()
         flash("Facility Added Successfully", "success")
-
         return redirect(url_for("add_amenity"))
     print(form.errors)
     return render_template("add_amenity.html", form=form)
