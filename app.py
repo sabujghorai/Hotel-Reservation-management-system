@@ -174,7 +174,6 @@ def login():
 
         # Create cursor
         cur = mysql.connection.cursor()
-
         # Get user by username
         result = cur.execute("SELECT * FROM admins WHERE username = %s", [username])
 
