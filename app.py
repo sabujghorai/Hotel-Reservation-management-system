@@ -133,7 +133,6 @@ def register():
 
         # Create cursor
         cur = mysql.connection.cursor()
-
         cur.execute("SELECT * FROM admins")
         rows = cur.fetchall()
         # print(rows[0])
