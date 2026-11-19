@@ -128,7 +128,6 @@ def register():
         name = form.name.data
         email = form.email.data
         username = form.username.data
-
         password = sha256_crypt.encrypt(str(form.password.data))
 
         # Create cursor
