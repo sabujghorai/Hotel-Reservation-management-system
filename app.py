@@ -147,10 +147,8 @@ def register():
 
         # Commit to DB
         mysql.connection.commit()
-
         # Close connection
         cur.close()
-
         flash("You are now registered and can log in", "success")
         return redirect(url_for("login"))
     return render_template("register.html", form=form)
