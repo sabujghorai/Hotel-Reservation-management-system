@@ -162,7 +162,6 @@ def login():
     if request.method == "POST":
         # Get Form Fields
         username = request.form["username"]
-
         password_candidate = request.form["password"]
 
         # Reject malformed usernames to defend against SQL injection
