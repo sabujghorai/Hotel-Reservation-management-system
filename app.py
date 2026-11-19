@@ -78,7 +78,6 @@ def rooms():
     cur = mysql.connection.cursor()
 
     result = cur.execute("SELECT * FROM rooms")
-
     rooms = cur.fetchall()
     if result > 0:
         return render_template("rooms.html", rooms=rooms)
