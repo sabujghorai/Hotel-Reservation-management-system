@@ -92,8 +92,7 @@ def rooms():
 def view_amenity(id):
     cur = mysql.connection.cursor()
 
-    result = cur.execute("SELECT * FROM amenities WHERE a_id = %s", [id])
-
+    result = cur.execute("SELECT * FROM amenities WHERE a_id = %s", [id])=
     amenity = cur.fetchone()
     return render_template("view_amenity.html", amenity=amenity)
 
