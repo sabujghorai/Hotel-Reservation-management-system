@@ -135,7 +135,6 @@ def register():
         cur = mysql.connection.cursor()
 
         cur.execute("SELECT * FROM admins")
-
         rows = cur.fetchall()
         # print(rows[0])
         # Execute query
