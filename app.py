@@ -76,7 +76,6 @@ def amenities():
 @app.route("/rooms")
 def rooms():
     cur = mysql.connection.cursor()
-
     result = cur.execute("SELECT * FROM rooms")
     rooms = cur.fetchall()
     if result > 0:
