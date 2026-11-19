@@ -138,7 +138,6 @@ def register():
 
         rows = cur.fetchall()
         # print(rows[0])
-
         # Execute query
         cur.execute(
             "INSERT INTO admins(name, email, username, password) VALUES(%s, %s, %s, %s)",
