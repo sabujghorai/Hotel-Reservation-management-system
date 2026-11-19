@@ -169,7 +169,6 @@ def login():
         if not re.fullmatch(r"[A-Za-z0-9._ -]{1,25}", username):
             error = "Invalid login"
             return render_template("login.html", error=error)
-
         session["username"] = username
 
         # Create cursor
