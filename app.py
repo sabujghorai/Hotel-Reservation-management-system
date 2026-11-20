@@ -277,7 +277,6 @@ def edit_amenity(id):
     print(amenity)
     form = AmenityForm()
     print(form)
-
     form.type.data = str(amenity["a_type"])
     form.status.data = str(amenity["a_status"])
     form.capacity.data = str(amenity["a_capacity"])
