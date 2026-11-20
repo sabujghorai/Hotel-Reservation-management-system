@@ -283,7 +283,6 @@ def edit_amenity(id):
     form.capacity.data = str(amenity["a_capacity"])
     form.title.data = str(amenity["a_title"])
     form.description.data = amenity["a_description"]
-
     if form.validate_on_submit():
         type = request.form["type"]
         status = request.form["status"]
