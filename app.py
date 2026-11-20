@@ -26,7 +26,6 @@ from os import environ
 
 app = Flask(__name__)
 app.secret_key = os.urandom(32)
-
 # Config MySQL
 app.config["MYSQL_HOST"] = environ.get("MYSQL_HOST")
 app.config["MYSQL_USER"] = environ.get("MYSQL_USER")
