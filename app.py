@@ -18,7 +18,6 @@ from wtforms.widgets import TextInput
 from passlib.hash import sha256_crypt
 from functools import wraps
 import pdfkit
-
 # from twilio.rest import Client
 from datetime import date
 import os
