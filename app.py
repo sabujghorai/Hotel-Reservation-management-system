@@ -270,7 +270,6 @@ def add_amenity():
 def edit_amenity(id):
     print("&&&&&FFGTHTRH")
     cur = mysql.connection.cursor()
-
     result = cur.execute("SELECT * FROM amenities WHERE a_id=%s", [id])
     print(result)
     amenity = cur.fetchone()
