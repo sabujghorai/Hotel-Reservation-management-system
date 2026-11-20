@@ -356,7 +356,6 @@ def add_room():
 
         mysql.connection.commit()
         cur.close()
-
         flash("Room Added Successfully!", "success")
 
         return redirect(url_for("add_room"))
