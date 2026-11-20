@@ -33,7 +33,6 @@ app.config["MYSQL_USER"] = environ.get("MYSQL_USER")
 app.config["MYSQL_PASSWORD"] = environ.get("MYSQL_PASSWORD")
 app.config["MYSQL_DB"] = environ.get("MYSQL_DB")
 app.config["MYSQL_CURSORCLASS"] = environ.get("MYSQL_CURSORCLASS")
-
 # init MYSQL
 mysql = MySQL(app)
 
