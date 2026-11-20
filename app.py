@@ -61,7 +61,6 @@ def amenities():
     cur = mysql.connection.cursor()
 
     result = cur.execute("SELECT * FROM amenities")
-
     amenities = cur.fetchall()
     if result > 0:
         return render_template("amenities.html", amenities=amenities)
