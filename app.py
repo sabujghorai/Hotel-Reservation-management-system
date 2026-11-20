@@ -46,7 +46,6 @@ def index():
     else:
         session["secret_key"] = os.urandom(32)
     print(f"app.config['MYSQL_CURSORCLASS'] = {app.config.get('MYSQL_CURSORCLASS')!r}")
-
     cur = mysql.connection.cursor()
     return render_template("home.html")
 
