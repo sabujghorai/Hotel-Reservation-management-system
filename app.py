@@ -309,7 +309,6 @@ def edit_amenity(id):
 @is_logged_in
 def delete_amenity(id):
     cur = mysql.connection.cursor()
-
     cur.execute("DELETE FROM amenities WHERE a_id=%s", [id])
     mysql.connection.commit()
     cur.close()
