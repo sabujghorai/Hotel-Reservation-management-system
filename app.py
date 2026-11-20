@@ -341,7 +341,6 @@ class RoomForm(FlaskForm):
 @is_logged_in
 def add_room():
     form = RoomForm(request.form)
-
     if request.method == "POST" and form.validate():
         id = form.id.data
         number = form.number.data
