@@ -347,7 +347,6 @@ def add_room():
         type = form.type.data
         status = form.status.data
         capacity = form.capacity.data
-
         cur = mysql.connection.cursor()
 
         cur.execute(
