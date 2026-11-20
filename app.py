@@ -355,7 +355,6 @@ def add_room():
         )
 
         mysql.connection.commit()
-
         cur.close()
 
         flash("Room Added Successfully!", "success")
