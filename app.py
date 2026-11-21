@@ -361,7 +361,6 @@ def add_room():
 
     return render_template("add_room.html", form=form)
 
-
 @app.route("/edit_room/<string:id>", methods=["GET", "POST"])
 @is_logged_in
 def edit_room(id):
