@@ -414,7 +414,6 @@ def home():
         return form.dt.data.strftime("%Y-%m-%d")
     return render_template("example.html", form=form)
 
-
 class BookingForm(FlaskForm):
     g_id = StringField("Enter your unique Guest ID")
     check_in = DateField("Pick a Date", format="%m/%d/%Y", widget=TextInput())
