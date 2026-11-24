@@ -433,7 +433,6 @@ class BookingForm(FlaskForm):
 def bookings(id):
     global g_id, b_id
     b_id = random.randint(1001, 10000)
-
     cur = mysql.connection.cursor()
 
     if id[0] == "R":
