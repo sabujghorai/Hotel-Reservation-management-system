@@ -389,7 +389,6 @@ def edit_room(id):
         mysql.connection.commit()
         cur.close()
         flash("Room Updated successfully", "success")
-
         return redirect(url_for("edit_room", id=id))
 
     return render_template("edit_room.html", form=form, id=id)
