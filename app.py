@@ -387,7 +387,6 @@ def edit_room(id):
             (type, status, capacity, id),
         )
         mysql.connection.commit()
-
         cur.close()
 
         flash("Room Updated successfully", "success")
