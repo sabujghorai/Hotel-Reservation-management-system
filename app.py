@@ -434,7 +434,6 @@ def bookings(id):
     global g_id, b_id
     b_id = random.randint(1001, 10000)
     cur = mysql.connection.cursor()
-
     if id[0] == "R":
         result = cur.execute("SELECT * FROM rooms WHERE r_id=%s", [id])
     else:
