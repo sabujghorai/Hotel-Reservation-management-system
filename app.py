@@ -399,7 +399,6 @@ def delete_room(id):
     cur = mysql.connection.cursor()
     cur.execute("DELETE FROM rooms WHERE r_id=%s", [id])
     mysql.connection.commit()
-
     cur.close()
 
     flash("Room Deleted", "success")
