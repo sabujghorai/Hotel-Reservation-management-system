@@ -401,7 +401,6 @@ def delete_room(id):
     mysql.connection.commit()
     cur.close()
     flash("Room Deleted", "success")
-
     return redirect(url_for("admin_rooms"))
 
 
