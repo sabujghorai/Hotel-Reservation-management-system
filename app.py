@@ -403,7 +403,6 @@ def delete_room(id):
     flash("Room Deleted", "success")
     return redirect(url_for("admin_rooms"))
 
-
 class DateForm(FlaskForm):
     dt = DateField("Pick a Date", format="%m/%d/%Y")
 
