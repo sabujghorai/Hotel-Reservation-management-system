@@ -406,7 +406,6 @@ def delete_room(id):
 class DateForm(FlaskForm):
     dt = DateField("Pick a Date", format="%m/%d/%Y")
 
-
 @app.route("/date", methods=["post", "get"])
 def home():
     form = DateForm()
