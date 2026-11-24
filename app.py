@@ -400,7 +400,6 @@ def delete_room(id):
     cur.execute("DELETE FROM rooms WHERE r_id=%s", [id])
     mysql.connection.commit()
     cur.close()
-
     flash("Room Deleted", "success")
 
     return redirect(url_for("admin_rooms"))
