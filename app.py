@@ -438,7 +438,6 @@ def bookings(id):
         result = cur.execute("SELECT * FROM rooms WHERE r_id=%s", [id])
     else:
         result = cur.execute("SELECT * FROM amenities WHERE a_id=%s", [id])
-
     amenity = cur.fetchone()
 
     if id[0] == "R" and amenity["r_status"] == 1:
