@@ -382,7 +382,6 @@ def edit_room(id):
         capacity = request.form["capacity"]
 
         cur = mysql.connection.cursor()
-
         cur.execute(
             "UPDATE rooms SET r_type=%s, r_status=%s, r_capacity=%s WHERE r_id=%s",
             (type, status, capacity, id),
