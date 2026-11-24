@@ -439,7 +439,6 @@ def bookings(id):
     else:
         result = cur.execute("SELECT * FROM amenities WHERE a_id=%s", [id])
     amenity = cur.fetchone()
-
     if id[0] == "R" and amenity["r_status"] == 1:
         return redirect(url_for("rooms"))
 
