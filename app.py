@@ -386,7 +386,6 @@ def edit_room(id):
             "UPDATE rooms SET r_type=%s, r_status=%s, r_capacity=%s WHERE r_id=%s",
             (type, status, capacity, id),
         )
-
         mysql.connection.commit()
 
         cur.close()
