@@ -2,7 +2,6 @@ from twilio.rest import Client
 from decouple import config
 
 client = Client(config('TWILIO_ACCOUNT_SID'), config('TWILIO_AUTH_TOKEN'))
-
 client.messages.create(
         to=config('TWILIO_MYPHONE'),
         from_=config('TWILIO_NUMBER'),
