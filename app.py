@@ -479,7 +479,6 @@ def bookings(id):
             )
             result = cur.fetchone()
             f_cost = result["cost"]
-
             print(f_type, f_cost)
 
             check_out = check_in
