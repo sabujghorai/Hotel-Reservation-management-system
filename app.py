@@ -531,7 +531,6 @@ def admin_guests():
 class BillForm(FlaskForm):
     id = StringField("Guest ID", [validators.Length(min=1, max=5)])
 
-
 @app.route("/generate_bill/<string:id>")
 def generate_bill(id):
     cur = mysql.connection.cursor()
