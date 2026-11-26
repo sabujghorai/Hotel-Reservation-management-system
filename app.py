@@ -564,7 +564,6 @@ def generate_bill(id):
     response = make_response(pdf)
     response.headers["Content-Type"] = "application/pdf"
     response.headers["Content-Disposition"] = "inline; filename=Bill.pdf"
-
     return response
 
 
