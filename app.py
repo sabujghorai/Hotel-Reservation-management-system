@@ -519,9 +519,7 @@ def bookings(id):
 def admin_guests():
     cur = mysql.connection.cursor()
     result = cur.execute("SELECT * FROM guests")
-
     guests = cur.fetchall()
-
     if result > 0:
         return render_template("guests.html", guests=guests)
     else:
