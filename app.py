@@ -525,7 +525,6 @@ def admin_guests():
     else:
         msg = "No guests in the Hotel currently"
         return render_template("guests.html", msg=msg)
-
     return render_template("guests.html")
 
 
