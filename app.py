@@ -34,7 +34,6 @@ app.config["MYSQL_CURSORCLASS"] = environ.get("MYSQL_CURSORCLASS")
 # init MYSQL
 mysql = MySQL(app)
 
-
 # Index
 @app.route("/")
 def index():
