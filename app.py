@@ -512,7 +512,6 @@ def bookings(id):
         cur.close()
         flash("Successfully Booked!", "success")
         return redirect(url_for("bookings", id=id))
-
     return render_template("bookings.html", amenity=amenity, id=id, form=form)
 
 
