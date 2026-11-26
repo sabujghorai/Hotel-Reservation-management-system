@@ -575,7 +575,6 @@ def billings():
         return redirect(url_for("generate_bill", id=id))
     return render_template("billings.html", form=form)
 
-
 if __name__ == "__main__":
     SECRET_KEY = os.urandom(32)
     app.config["WTF_CSRF_SECRET_KEY"] = SECRET_KEY
