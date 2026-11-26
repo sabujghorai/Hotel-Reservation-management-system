@@ -518,7 +518,6 @@ def bookings(id):
 @app.route("/admin_guests")
 def admin_guests():
     cur = mysql.connection.cursor()
-
     result = cur.execute("SELECT * FROM guests")
 
     guests = cur.fetchall()
