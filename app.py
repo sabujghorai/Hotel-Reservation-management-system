@@ -577,7 +577,6 @@ def billings():
 
 
 if __name__ == "__main__":
-
     SECRET_KEY = os.urandom(32)
     app.config["WTF_CSRF_SECRET_KEY"] = SECRET_KEY
     app.run(debug=True)
