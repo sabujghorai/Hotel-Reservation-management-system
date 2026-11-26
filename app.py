@@ -509,7 +509,6 @@ def bookings(id):
             )
 
         mysql.connection.commit()
-
         cur.close()
 
         flash("Successfully Booked!", "success")
