@@ -565,7 +565,6 @@ def generate_bill(id):
     response.headers["Content-Disposition"] = "inline; filename=Bill.pdf"
     return response
 
-
 @app.route("/billings", methods=["GET", "POST"])
 def billings():
     form = BillForm()
