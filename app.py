@@ -495,7 +495,6 @@ def bookings(id):
         pincode = form.pincode.data
 
         print("hello " + check_in)
-
         if id[0] == "R":
             cur.execute(
                 "INSERT INTO bookings(b_id, r_id, g_id, b_status, a_id, st, et, f_type, f_cost) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s)",
