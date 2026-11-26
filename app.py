@@ -541,7 +541,6 @@ def generate_bill(id):
 
     for i in range(0, len(bookings)):
         total += bookings[i]["f_cost"]
-
     rendered = render_template(
         "generate_bill.html",
         len=len(bookings),
