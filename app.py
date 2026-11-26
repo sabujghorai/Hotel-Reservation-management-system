@@ -510,7 +510,6 @@ def bookings(id):
 
         mysql.connection.commit()
         cur.close()
-
         flash("Successfully Booked!", "success")
 
         return redirect(url_for("bookings", id=id))
